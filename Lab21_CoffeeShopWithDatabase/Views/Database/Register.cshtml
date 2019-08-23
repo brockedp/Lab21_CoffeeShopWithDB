@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+
+@model Lab21_CoffeeShopWithDatabase.Models.Member
+
+
+
+    <form action="/Database/MakeNewMember" method="post" >
+
+        <h1 class="display-4">Registration</h1>
+        <p>Username: <input type="text" name="UserName" /></p>
+        <p>First Name: <input type="text" name="FirstName" /></p>
+        <p>Last Name: <input type="text" name="LasttName" /></p>
+        <p>Funds: <input type="number" name="Funds" /></p>
+        <p>Eamil: <input type="text" name="Email" /></p>
+        <p>Password: <input type="text" name="Password" /></p>
+
+        <div class="col-3">
+            Drink of Choice
+
+            <p>None  <input type="radio" name="Drink" value="none" /></p>
+            <p>Coffee  <input type="radio" name="Drink" value="coffee" /></p>
+            <p>Tea  <input type="radio" name="Drink" value="tea" /></p>
+            <p>Latter <input type="radio" name="Drink" value="latte" /></p>
+            <p>Cappucino <input type="radio" name="Drink" value="cappucino" /></p>
+
+
+
+        </div>
+
+
+
+
+        <input type="submit" value="Submit" />
+    </form>
+
+<style>
+
+    .space input {
+        margin-right: 9em;
+    }
+
+    .space label {
+        position: absolute;
+    }
+</style>
+
+
+
+
+
+
+
+
+
